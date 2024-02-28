@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* navbar starts */
+.navbar{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    height: 5rem;
+    width: 100%;
+    padding: 0px 30px;
+}
+.main{
+display: flex;
+justify-content: space-between;
+gap: 40px;
+}
+#logo{
+font-weight: 900;
+font-size: 2.1rem;
+color: white;
+}
+#nav{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+font-size: 1.3rem;
+color: grey;
+}
+.button{
+    /* width: fit-content;
+    height: 2.2rem; */
+    padding: 0.5rem 1rem;
+    border: 2px solid grey;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(15, 4, 76);
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style:none;
+}
+li a,.overtext a{
+text-decoration: none;
+color: grey;
+}
+/* navbar end  */
+/* homepage starts */
+body{
+    background-color: rgb(20, 30, 97);
+}
+.video{
+  /* width: 100vw; */
+  height: fit-content;
+  overflow: hidden;
+  position: absolute;
+}
+video{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.overtext{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: max-content;
+  height: fit-content;
+  padding: 10rem 3rem;
+}
+.overtext h1{
+    font-size: 4rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-weight: bold;
+}
+.overtext p{
+font-size: 3rem;
+color: white;
+font-weight: bold;
+}
+.container {
+  /* position: ; */
+  color: white;
+}
+button{
+    width: 7rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: transparent;
+    margin: 20px 40px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+.container{
+    height: 50vh;
+    color: black;
+}
+/* homepage end */
+/* aboutpage starts */
+#about{
+    height: 100vh;
+    background: url("images/BackgroundImg2.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px 40px; */
+    /* margin-top: 100px; */
+    /* align-items: start; */
+    gap: 50px;
+}
+#heading{
+    border-bottom: 2px solid grey;
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    /* margin-top: 50px; */
+    width: 50vw;
+/* padding-top: 5rem; */
+/* padding-bottom: auto; */
+}
+#description{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    width: 70vw;
+    /* font-weight: bold; */
+}
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+/* about page end  */
+/* purchase page starts */
+#purchase{
+    background: url("images/BackgroundImg1.jpg");
+    /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.inner-dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.inner-dropdown select{
+    width: 400px;
+    height: 50px;
+    background-color: rgb(65, 225, 225);
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.innerbtn{
+width: 400px;
+height: 50px;
+text-align: center;
+background-color: rgb(248, 159, 6);
+/* border: 1px solid black; */
+}
+.innerbtn a{
+text-decoration: none;
+color:white;
+font-weight: 900;
+}
+.sidetext{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    height: 65vh;
+    color: white;
+    background-color: rgb(4, 4, 11,0.6);
+    margin-bottom: 100px;
+    /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+    /* opacity:0.5 ; */
+}
+.sidetext h1{
+    border-bottom: 3px solid aqua;
+    font-weight: bolder;
+}
+.sidetext h3{
+    font-size: 23px;
+}
+/* purchase page ends  */
+/* community page starts */
+#community{
+    width:100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url("images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.textside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 40px;
+    
+}
+.textside h1{
+    font-size: 3rem;
+}
+.textside p{
+font-size: 2rem;
+}
+.joinbtn{
+    border: 2px solid black;
+    background-color: black;
+    /* width: 4.5rem;
+    height: 2rem; */
+    margin-top: 20px;
+    text-align: center;
+    padding: 8px 20px;
+}
+.joinbtn a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.joinbtn a img{
+    align-self: center;
+    width: 20px;
+    height: 20px;
+}
+/* footer starts */
+footer{
+    width: 100%;
+    height: 45vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.TopFooter{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    width:70vw;
+    height: 20vh;
+}
+.leftside,.rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+.leftside{
+    align-items: start;
+}
+.rightside{
+    align-items: end;
+}
+.leftside ul{
+    display: flex;
+    gap: 30px;
+    color: grey;
+}
+.leftside ul li{
+    list-style: none;
+    font-size: 20px;
+}
+.downFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:70vw;
+    height: 25vh;
+}
+.leftimgage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.leftimage{
+    color: white;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.icons img{
+    width: 32px;
+    height: 32px;
+}
+#x{
+    width: 28px;
+    height: 25px;
+}
+#r{
+    height: 27px;
+    width: 30px;
+}
+@media screen and (max-width:600px){
+
+}
